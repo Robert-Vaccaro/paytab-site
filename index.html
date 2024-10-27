@@ -17,7 +17,7 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
-  <div class="container"><img src="images/pt-image-transparent.png" alt="logo" class="" style="width: 150px; height: 40px;">
+  <div class="container"><img src="images/pt-image-transparent.png" alt="logo" class="" style="width: 150px; height: 40px; padding-left: 10px;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
@@ -31,28 +31,30 @@
 </nav>
 <!-- End Navbar --> 
 <!-------Banner Start------->
-<section class="banner" data-scroll-index='0'>
+<section class="banner" data-scroll-index="0">
   <div class="banner-overlay">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12">
           <div class="banner-text">
+            <!-- 200x100 Image above the title -->
+            <img src="images/pt-image-white.png" alt="Logo" class="banner-image" width="400" height="100">
+            
             <h2 class="white">Effortless payment at bars & restaurants</h2>
-            <h5 class="white">Stop waiting to pay your check. Just walk out.</a></h5>
+            <h5 class="white">Stop waiting to pay your check. Just walk out.</h5>
             <p class="banner-text white">
               PayTab is a seamless, user-downloaded payment app designed to revolutionize how people pay at food & beverage venues. With PayTab, there's no need to wait on a bartender or server for the check, no fuss in splitting a bill with friends, and no more lost credit cards. Open your tab from your phone. Order like you normally would. Walk out when you want to leave.
             </p>
-            <!-- <ul>
-              <li><a href="/"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
-              <li><a href="/"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
-            </ul> -->
           </div>
         </div>
-        <div class="col-md-4 col-sm-12"> <img src="images/Order food-amico.png" class="img-fluid wow fadeInUp"/> </div>
+        <div class="col-md-4 col-sm-12">
+          <img src="images/Order food-amico.png" class="img-fluid wow fadeInUp" />
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-------Banner End-------> 
 
@@ -194,7 +196,7 @@
     event.preventDefault();
     const email = document.getElementById('email').value;
     
-    axios.post('https://your-api-endpoint.com/early-access', { email: email })
+    axios.post('https://rocky-everglades-23449-48ef56fc7402.herokuapp.com/users/early-access', { email: email })
       .then(response => {
         document.getElementById('response-message').textContent = 'Thank you! You have signed up for early access.';
         document.getElementById('response-message').style.color = 'green';

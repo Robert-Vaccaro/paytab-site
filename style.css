@@ -115,7 +115,10 @@ h6 {
   .download-cta {
 	color: #7a60ff;
   }
-  
+  .banner-image {
+	display: block;
+	max-width: 95%;
+}
   /* Responsive styling */
   @media (max-width: 768px) {
 	.cta-section {
