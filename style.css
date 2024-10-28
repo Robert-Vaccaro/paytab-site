@@ -30,12 +30,21 @@
   }
   
   /* Headings */
-  .coming-soon h1 {
+  .coming-soon h2 {
 	font-size: 3rem;
 	font-weight: 600;
 	margin-bottom: 10px;
   }
-  
+  .coming-soon h4 {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+  }
+  .coming-soon h5 {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+  }
   .coming-soon p {
 	font-size: 1rem;
 	margin-bottom: 20px;
